@@ -104,8 +104,19 @@ else:
 # El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el
 # usuario e imprimir el resultado por pantalla.
 
-nombre=input("Ingrese su nombre")
-opcion=int(input("Ingrese una opción:"))
+nombre=input("Ingrese su nombre: ")
+print("Ingrese una opción:")
 print("1. Si quiere su nombre en mayúsculas. Por ejemplo: PEDRO.")
 print("2. Si quiere su nombre en minúsculas. Por ejemplo: pedro.")
 print("3. Si quiere su nombre con la primera letra mayúscula. Por ejemplo: Pedro.")
+opcion=int(input(""))
+
+if opcion == 1 :
+    nombre=nombre.upper()
+    print(nombre)
+elif opcion == 2 :
+    nombre=nombre.lower()
+    print(nombre)
+elif opcion == 3:
+    nombre=nombre.title()
+    print(nombre)
