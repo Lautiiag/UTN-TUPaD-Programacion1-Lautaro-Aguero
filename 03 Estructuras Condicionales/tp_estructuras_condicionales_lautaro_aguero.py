@@ -147,3 +147,14 @@ elif magnitud >= 6 and magnitud < 7 :
     print("Muy fuerte (puede causar daños significativos).")
 elif magnitud >= 7 :
     print("Extremo (puede causar graves daños a gran escala).")
+
+
+# 10) Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes
+# del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla
+# si el usuario se encuentra en otoño, invierno, primavera o verano.
+
+hemisferio=input("En qué hemisferio se encuentra (N/S)?")
+mes=int(input("En qué número de mes se encuentra?"))
+dia=int(input("Que dia es?"))
+
+if (dia  21 and mes == 12) 
