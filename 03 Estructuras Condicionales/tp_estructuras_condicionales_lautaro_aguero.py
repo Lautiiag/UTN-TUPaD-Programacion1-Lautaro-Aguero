@@ -70,14 +70,29 @@ else:
 # numeros_aleatorios, calcule su moda, su mediana y su media y las compare para determinar si
 # hay sesgo positivo, negativo o no hay sesgo. Imprimir el resultado por pantalla.
 
-
 numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 media=mean(numeros_aleatorios)
 moda=mode(numeros_aleatorios)
 mediana=median(numeros_aleatorios)
+print(numeros_aleatorios)
 if media > mediana and mediana > moda:
     print("El sesgo es positivo.")
 elif media < mediana and mediana < moda:
     print("El sesgo es negativo.")
 else:
     print("Sin sesgo.")
+
+
+# 7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado
+# termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por
+# pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
+# pantalla.
+
+frase=input("Ingrese una frase o palabra: ").lower()
+vocal=("a","e","i","o","u")
+if frase.endswith(vocal):
+    print(frase + "!")
+else:
+    print(frase)
+
+
