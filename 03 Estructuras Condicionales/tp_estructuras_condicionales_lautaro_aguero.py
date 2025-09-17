@@ -25,4 +25,7 @@ else:
 
 
 num_usuario=int(input("Ingrese un número par: "))
-if num_usuario % == 0:
+if num_usuario % 2 == 0:
+    print("Ha ingresado un número par")
+else:
+    print("Por favor, ingrese un número par")
