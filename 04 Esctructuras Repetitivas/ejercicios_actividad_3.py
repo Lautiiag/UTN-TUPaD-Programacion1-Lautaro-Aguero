@@ -12,3 +12,24 @@ if num <= 0:
 for num in range(num,-1,-1):
     if num % 2 == 0:
         print(num, end=" ")
+
+
+# VIDEO 2
+# Desarrollar un algoritmo que permita ingresar un número entero entre 1 y 10 (inclusive). La
+# computadora debe mostrar la tabla de multiplicar del número ingresado.
+# Ejemplo: Si ingresa 7, debe mostrar:
+# 7 x 1 = 7
+# 7 x 2 = 14
+# 7 x 3 = 21
+# 7 x 4 = 28
+# 7 x 5 = 35
+# 7 x 6 = 42
+# 7 x 7 = 49
+# 7 x 8 = 56
+# 7 x 9 = 63
+# 7 x 10 = 70
+
+num2=int(input("Ingrese un número entero entre 1 y 10 (inclusive): "))
+for i in range(11):
+    resultado=i*num2
+    print(f"{num2} x {i} = {resultado}")
