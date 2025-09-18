@@ -1,8 +1,9 @@
 "PRUEBAS"
-hemisferio=input("En qué hemisferio se encuentra (N/S)?").lower()
-mes=int(input("En qué número de mes se encuentra?"))
-dia=int(input("Que dia es?"))
+#----------------------------------#
 
-if hemisferio == "s" :
-    if mes in (12,1,2,3):
-        print("Actualmente se encuentra en Verano.")
+frase=input("Ingrese una frase o palabra: ").lower().strip()
+vocal=("a","e","i","o","u")
+if frase.endswith(vocal):
+    print(frase + "!")
+else:
+    print(frase)

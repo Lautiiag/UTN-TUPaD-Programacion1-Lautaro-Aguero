@@ -19,7 +19,7 @@ nota_usuario=float(input("Ingrese su nota: "))
 if nota_usuario >= 6:
     print("Aprobado")
 else:
-    print("Desaprovado")
+    print("Desaprobado")
 
 
 # 3) Escribir un programa que permita ingresar solo números pares. Si el usuario ingresa un
@@ -88,7 +88,7 @@ else:
 # pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
 # pantalla.
 
-frase=input("Ingrese una frase o palabra: ").lower()
+frase=input("Ingrese una frase o palabra: ").lower().strip()
 vocal=("a","e","i","o","u")
 if frase.endswith(vocal):
     print(frase + "!")
