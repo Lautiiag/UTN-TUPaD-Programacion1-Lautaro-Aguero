@@ -17,3 +17,11 @@ print("El número tiene", len(num), "dígitos.")
 
 # 3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
 # dados por el usuario, excluyendo esos dos valores.
+
+minimo=int(input("Ingrese el valor mínimo: "))
+maximo=int(input("Ingrese el valor máximo: "))
+suma=0
+for i in range(minimo+1,maximo):
+    suma= suma + i
+print("La suma es: ", suma)
+
