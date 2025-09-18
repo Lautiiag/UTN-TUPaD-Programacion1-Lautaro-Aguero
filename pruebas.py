@@ -1,6 +1,14 @@
 "PRUEBAS"
 #----------------------------------#
-num2=int(input("Ingrese un número entero entre 1 y 10 (inclusive): "))
-for i in range(11):
-    resultado=i*num2
-    print(f"{num2} x {i} = {resultado}")
+# VIDEO 3
+# Desarrollar un algoritmo que permita ingresar una cantidad de personas. La computadora debe
+# pedir la edad de cada una y finalmente mostrar el porcentaje de personas que es mayor de edad.
+
+personas=int(input("Ingrese cantidad de personas: "))
+personas_mayores=0
+for i in range(personas):
+    edad=int(input(f"Ingrese la edad de la persona {i+1}: "))
+    if edad >= 18:
+        personas_mayores += 1
+porcentaje_personas_mayores= (personas_mayores / personas) * 100
+print("El porcentaje de personas mayores es de: ", round(porcentaje_personas_mayores,2), "porciento.")
