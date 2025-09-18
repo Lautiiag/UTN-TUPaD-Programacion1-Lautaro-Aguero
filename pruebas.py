@@ -1,17 +1,8 @@
 "PRUEBAS"
-magnitud=float(input("Ingrese la magnitud del terremoto (escala Ritcher): "))
-if magnitud < 3 :
-    print("Muy leve (imperceptible).")
-elif magnitud >= 3 and magnitud < 4 :
-    print("Leve (ligeramente perceptible).")
-elif magnitud >= 4 and magnitud < 5 :
-    print("Moderado (sentido por personas, pero generalmente no causa daños).")
-elif magnitud >= 5 and magnitud < 6 :
-    print("Fuerte (puede causar daños en estructuras débiles).")
-elif magnitud >= 6 and magnitud < 7 :
-    print("Muy fuerte (puede causar daños significativos).")
-elif magnitud >= 7 :
-    print("Extremo (puede causar graves daños a gran escala).")
+hemisferio=input("En qué hemisferio se encuentra (N/S)?").lower()
+mes=int(input("En qué número de mes se encuentra?"))
+dia=int(input("Que dia es?"))
 
-
-
+if hemisferio == "s" :
+    if mes in (12,1,2,3):
+        print("Actualmente se encuentra en Verano.")

@@ -152,9 +152,36 @@ elif magnitud >= 7 :
 # 10) Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes
 # del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla
 # si el usuario se encuentra en otoño, invierno, primavera o verano.
+# ------------(en este punto no concideré validaciones porque no se me ocurre cómo realizarlas sin
+# utilizar un while-try)
 
-hemisferio=input("En qué hemisferio se encuentra (N/S)?")
+hemisferio=input("En qué hemisferio se encuentra (N/S)?").lower()
 mes=int(input("En qué número de mes se encuentra?"))
 dia=int(input("Que dia es?"))
 
-if (dia  21 and mes == 12) 
+if hemisferio == "s" :
+    # Este bloque es de verano.
+    if (mes == 12 and dia >= 21) or (mes in (1, 2)) or (mes == 3 and dia <= 20):
+        print("Usted se encuentra en verano.")
+    # Este bloque es de otoño.
+    elif (mes == 3 and dia >= 21) or (mes in (4, 5)) or (mes == 6 and dia <= 20):
+        print("Usted se encuentra en otoño.")
+    # Este bloque es de invierno.
+    elif (mes == 6 and dia >= 21) or (mes in (7, 8)) or (mes == 9 and dia <= 20):
+        print("Usted se encuentra en invierno.")
+    # Este bloque es de primavera.
+    elif (mes == 9 and dia >= 21) or (mes in (10, 11)) or (mes == 12 and dia <= 20):
+        print("Usted se encuentra en primavera.")
+elif hemisferio == "n" :
+    # Este bloque es de invierno.
+    if (mes == 12 and dia >= 21) or (mes in (1, 2)) or (mes == 3 and dia <= 20):
+        print("Usted se encuentra en verano.")
+    # Este bloque es de primavera.
+    elif (mes == 3 and dia >= 21) or (mes in (4, 5)) or (mes == 6 and dia <= 20):
+        print("Usted se encuentra en otoño.")
+    # Este bloque es de verano.
+    elif (mes == 6 and dia >= 21) or (mes in (7, 8)) or (mes == 9 and dia <= 20):
+        print("Usted se encuentra en invierno.")
+    # Este bloque es de otoño.
+    elif (mes == 9 and dia >= 21) or (mes in (10, 11)) or (mes == 12 and dia <= 20):
+        print("Usted se encuentra en primavera.")
