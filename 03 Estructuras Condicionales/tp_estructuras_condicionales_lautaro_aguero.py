@@ -175,13 +175,13 @@ if hemisferio == "s" :
 elif hemisferio == "n" :
     # Este bloque es de invierno.
     if (mes == 12 and dia >= 21) or (mes in (1, 2)) or (mes == 3 and dia <= 20):
-        print("Usted se encuentra en verano.")
+        print("Usted se encuentra en invierno.")
     # Este bloque es de primavera.
     elif (mes == 3 and dia >= 21) or (mes in (4, 5)) or (mes == 6 and dia <= 20):
-        print("Usted se encuentra en otoño.")
+        print("Usted se encuentra en primavera.")
     # Este bloque es de verano.
     elif (mes == 6 and dia >= 21) or (mes in (7, 8)) or (mes == 9 and dia <= 20):
-        print("Usted se encuentra en invierno.")
+        print("Usted se encuentra en verano.")
     # Este bloque es de otoño.
     elif (mes == 9 and dia >= 21) or (mes in (10, 11)) or (mes == 12 and dia <= 20):
-        print("Usted se encuentra en primavera.")
+        print("Usted se encuentra en otoño.")
