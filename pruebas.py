@@ -5,6 +5,9 @@
 # pedir la edad de cada una y finalmente mostrar el porcentaje de personas que es mayor de edad.
 
 personas=int(input("Ingrese cantidad de personas: "))
+if personas <= 0:
+    while personas < 0:
+        personas=int(input("Ingrese cantidad válida de personas: "))
 personas_mayores=0
 for i in range(personas):
     edad=int(input(f"Ingrese la edad de la persona {i+1}: "))
