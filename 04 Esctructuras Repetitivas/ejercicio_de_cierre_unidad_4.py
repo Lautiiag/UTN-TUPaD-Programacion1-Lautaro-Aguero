@@ -2,6 +2,7 @@
 # 1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea
 # EN ESTE EJERCICIO SE UTILIZA UNA VARIABLE PARA INDICAR EL NUMERO MAXIMO POR PRACTICIDAD.
+print("EJERCICIO 1")
 
 num_max=int(input("Ingrese el número entero máximo: "))
 for i in range(0,num_max+1):
@@ -10,6 +11,7 @@ for i in range(0,num_max+1):
 
 # 2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad de
 # dígitos que contiene.
+print("EJERCICIO 2")
 
 num=input("Ingrese un número entero: ")
 print("El número tiene", len(num), "dígitos.")
@@ -17,6 +19,7 @@ print("El número tiene", len(num), "dígitos.")
 
 # 3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
 # dados por el usuario, excluyendo esos dos valores.
+print("EJERCICIO 3")
 
 minimo=int(input("Ingrese el valor mínimo: "))
 maximo=int(input("Ingrese el valor máximo: "))
@@ -29,6 +32,7 @@ print("La suma es: ", suma)
 # 4) Elabora un programa que permita al usuario ingresar números enteros y los sume en
 # secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario ingrese
 # un 0
+print("EJERCICIO 4")
 
 num1=1
 suma1=0
@@ -42,7 +46,7 @@ print(suma1)
 
 # 5) Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el
 # programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
-
+print("EJERCICIO 5")
 import random
 
 numero_aleatorio=random.randint(0,9)
@@ -57,9 +61,19 @@ print("Intentos realizados: ", intentos)
 
 # 6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
 # entre 0 y 100, en orden decreciente.
-
+print("EJERCICIO 6")
 for i in range(100,-1,-2):
     print(i)
 
 
+# 7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
+# número entero positivo indicado por el usuario.
+print("EJERCICIO 7")
+numero_limite=int(input("Ingrese el número entero positivo límite: "))
+suma=0
+while numero_limite < 0:
+    numero_limite=int(input("Intente nuevamente: "))
+for i in range(numero_limite+1):
+    suma=suma+i
+print(suma)
 
