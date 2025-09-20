@@ -108,3 +108,23 @@ print(f"La cantidad de números positivos es de: {contador_positivos}")
 print(f"La cantidad de números negativos es de: {contador_negativos}")
 
 
+# 9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la
+# media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
+# poder procesar 100 números cambiando solo un valor).
+print("EJERCICIO 9")
+
+acumulacion=0
+cantidad_numeros=int(input("Ingrese el la cantidad máxima de números para la media: "))
+for i in range(cantidad_numeros):
+    numero_ingresado= int(input(f"Ingrese número {i+1}: "))
+    acumulacion= acumulacion + numero_ingresado
+media= acumulacion/cantidad_numeros
+print(f"La media de los número es: {round(media,2)}.")
+
+
+# 10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
+# usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+print("EJERCICIO 10")
+
+numero_a_invertir=input("Ingrese un número entero: ")
+print(numero_a_invertir[::-1])
