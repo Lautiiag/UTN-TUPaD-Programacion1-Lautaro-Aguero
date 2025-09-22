@@ -1,5 +1,6 @@
 "CASO 2 PARCIAL 1: CLINICA"
 # Respecto al documento: Opción 7 estaba repetida. Opción 6 se ve resuleta en opción 1.
+# Opción 9 es redundante, se omite.
 
 
 # Inicialización de listas y variables
@@ -14,11 +15,10 @@ print("3. Mostrar agenda")
 print("4. Consultar cupos de una especialidad")
 print("5. Listar especialidades sin cupo")
 print("6. Actualizar cupos (reservar/cancelar): ")
-print("7. Ver agenda: ")
-print("8. Salir")
+print("7. Salir")
 
 # Elegir opción
-opciones=["1","2","3","4","5","6","7","8","9"]
+opciones=["1","2","3","4","5","6","7"]
 
 salir=False
 while salir == False:
@@ -89,7 +89,4 @@ while salir == False:
                 print("La especialidad no se encuentra añadida.")
 
         case "7":
-            print("Ingreso 8")
-
-        case "8":
             salir=True
