@@ -1,4 +1,6 @@
 "CASO 2 PARCIAL 1: CLINICA"
+# Opción 7 estaba repetida. Opción 6 se ve resuleta en opción 1.
+
 
 # Inicialización de listas y variables
 especialidades=[]
@@ -11,10 +13,9 @@ print("2. Ingresar lista de cupos disponibles por especialidad")
 print("3. Mostrar agenda")
 print("4. Consultar cupos de una especialidad")
 print("5. Listar especialidades sin cupo")
-print("6. Ver sin cupo")
-print("7. Actualizar cupos (reservar/cancelar): ")
-print("8. Ver agenda: ")
-print("9. Salir")
+print("6. Actualizar cupos (reservar/cancelar): ")
+print("7. Ver agenda: ")
+print("8. Salir")
 
 # Elegir opción
 opciones=["1","2","3","4","5","6","7","8","9"]
@@ -36,7 +37,13 @@ while salir == False:
                     if nueva_especialidad in especialidades: # Valida que la especialidad no esté en la lista
                         print("Esta especialidad ya fue añadida.")
                     else:
-                        especialidades.append(nueva_especialidad)
+                        especialidades.append(nueva_especialidad) # Ingreso de especialidad efectiva
+                        cupos_disponibles=input("Ingrese una cantidad de cupos disponibles: ")
+                        if cupos_disponibles.isdigit(): # Valida que la cantidad de cupos sean números
+                            cupos.append(cupos_disponibles) # Ingreso de cupos efectivo
+                        else:
+                            print("La cantidad de cupos ingresada no es válida.")
+                            del especialidades[-1]
                 else:
                     nueva_especialidad= print("La especialidad solo debe contener letras. ")
 
@@ -70,12 +77,9 @@ while salir == False:
                 else:
                     print("Todas las especialidades tienen cupos.")
                     break
-
         case "6":
-            print("Ingreso 6")
-        case "7":
             print("Ingreso 7")
-        case "8":
+        case "7":
             print("Ingreso 8")
-        case "9":
+        case "8":
             salir=True
