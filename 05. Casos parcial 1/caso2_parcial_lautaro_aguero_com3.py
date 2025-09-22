@@ -32,21 +32,45 @@ while salir == False:
             for i in range(cant_especialidades):
                 print(f"Ingrese especialidad {i+1}:")
                 nueva_especialidad=input("Ingrese nueva especialidad: ").capitalize()
-                if nueva_especialidad.isalpha(): # Valida que no tenga números
-                    if nueva_especialidad in especialidades: # Valida que no esté en la lista.
+                if nueva_especialidad.isalpha(): # Valida que la nueva especialidad no tenga números
+                    if nueva_especialidad in especialidades: # Valida que la especialidad no esté en la lista
                         print("Esta especialidad ya fue añadida.")
                     else:
                         especialidades.append(nueva_especialidad)
                 else:
                     nueva_especialidad= print("La especialidad solo debe contener letras. ")
+
         case "2":
-            print("Ingreso 2")
+            for i in range(len(especialidades)):
+                cant_cupos=(input(f"Ingrese cantidad de cupos para {especialidades[i]}: "))
+                while not cant_cupos.isdigit(): # Valida que la cantidad sea números
+                    cant_cupos=input(f"Ingrese una cantidad válida para {especialidades[i]}: ")
+                    continue
+                cupos.append(cant_cupos)
+
         case "3":
-            print("Ingreso 3")
+            for i in range(len(especialidades)):
+                print(f"{especialidades[i]} tiene {cupos[i]} cupos. ")
+
         case "4":
-            print("Ingreso 4")
+            especialidades=["espe1","espe2","espe3"]
+            cupos=[10,11,12]
+            
+            espe_ver_cupos=input("Ingrese la especialidad: ")
+            if espe_ver_cupos in especialidades:
+                indice_ver_cupos=especialidades.index(espe_ver_cupos)
+                print(f"Hay {cupos[indice_ver_cupos]} disponibles.")
+            else:
+                print("La especialidad ingresada no está disponible.")
+
         case "5":
-            print("Ingreso 5")
+            for i in range(len(especialidades)):
+                if cupos[i] == 0:
+                    print(f"{especialidades[i]} no tiene cupos.")
+                else:
+                    print("Todas las especialidades tienen cupos.")
+                    break
+
         case "6":
             print("Ingreso 6")
         case "7":
