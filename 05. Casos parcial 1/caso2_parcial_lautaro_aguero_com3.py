@@ -7,21 +7,20 @@
 especialidades=[]
 cupos=[]
 
-# Menú
-print("MENÚ CLÍNICA")
-print("1. Ingresar lista de especialidades")
-print("2. Ingresar lista de cupos disponibles por especialidad")
-print("3. Mostrar agenda")
-print("4. Consultar cupos de una especialidad")
-print("5. Listar especialidades sin cupo")
-print("6. Actualizar cupos (reservar/cancelar): ")
-print("7. Salir")
-
 # Elegir opción
 opciones=["1","2","3","4","5","6","7"]
 
 salir=False
 while salir == False:
+    # Menú
+    print("-----------MENÚ CLÍNICA-----------")
+    print("1. Ingresar lista de especialidades")
+    print("2. Ingresar lista de cupos disponibles por especialidad")
+    print("3. Mostrar agenda")
+    print("4. Consultar cupos de una especialidad")
+    print("5. Listar especialidades sin cupo")
+    print("6. Actualizar cupos (reservar/cancelar): ")
+    print("7. Salir")
 
     opcion=(input("Ingrese una opción: ")) 
     while opcion not in opciones:
@@ -32,7 +31,7 @@ while salir == False:
             cant_especialidades=int(input("Ingrese cantidad de especialidades a añadir: "))
             for i in range(cant_especialidades):
                 print(f"Ingrese especialidad {i+1}:")
-                nueva_especialidad=input("Ingrese nueva especialidad: ").capitalize()
+                nueva_especialidad=input("Ingrese nueva especialidad: ").capitalize().strip()
                 if nueva_especialidad.isalpha(): # Valida que la nueva especialidad no tenga números
                     if nueva_especialidad in especialidades: # Valida que la especialidad no esté en la lista
                         print("Esta especialidad ya fue añadida.")
@@ -53,17 +52,15 @@ while salir == False:
                 while not cant_cupos.isdigit(): # Valida que la cantidad sea números
                     cant_cupos=input(f"Ingrese una cantidad válida para {especialidades[i]}: ")
                     continue
+                int(cant_cupos)
                 cupos.append(cant_cupos)
 
         case "3":
             for i in range(len(especialidades)):
-                print(f"{especialidades[i]} tiene {cupos[i]} cupos. ")
+                print(f"{especialidades[i]} tiene {cupos[i]} cupo(s). ")
 
         case "4":
-            especialidades=["espe1","espe2","espe3"]
-            cupos=[10,11,12]
-            
-            espe_ver_cupos=input("Ingrese la especialidad: ")
+            espe_ver_cupos=input("Ingrese la especialidad: ").capitalize().strip()
             if espe_ver_cupos in especialidades:
                 indice_ver_cupos=especialidades.index(espe_ver_cupos)
                 print(f"Hay {cupos[indice_ver_cupos]} disponibles.")
@@ -78,7 +75,7 @@ while salir == False:
                     print("Todas las especialidades tienen cupos.")
                     break
         case "6":
-            espe_cambiar_cupo=input("Ingrese el nombre de la especialidad: ")
+            espe_cambiar_cupo=input("Ingrese el nombre de la especialidad: ").capitalize().strip()
             if espe_cambiar_cupo in especialidades:
                 nueva_cant_cupos=input("Ingrese nueva cantidad de cupos: ")
                 if nueva_cant_cupos.isdigit():
