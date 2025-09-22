@@ -1,5 +1,5 @@
 "CASO 2 PARCIAL 1: CLINICA"
-# Opción 7 estaba repetida. Opción 6 se ve resuleta en opción 1.
+# Respecto al documento: Opción 7 estaba repetida. Opción 6 se ve resuleta en opción 1.
 
 
 # Inicialización de listas y variables
@@ -78,8 +78,18 @@ while salir == False:
                     print("Todas las especialidades tienen cupos.")
                     break
         case "6":
-            print("Ingreso 7")
+            espe_cambiar_cupo=input("Ingrese el nombre de la especialidad: ")
+            if espe_cambiar_cupo in especialidades:
+                nueva_cant_cupos=input("Ingrese nueva cantidad de cupos: ")
+                if nueva_cant_cupos.isdigit():
+                    cupos[especialidades.index(espe_cambiar_cupo)]=int(nueva_cant_cupos)
+                else:
+                    print("Ingrese una cantidad de cupos válida. ")
+            else:
+                print("La especialidad no se encuentra añadida.")
+
         case "7":
             print("Ingreso 8")
+
         case "8":
             salir=True
