@@ -1,4 +1,4 @@
-"Ahorcado temática de autos"
+"Ahorcado temática de vegetales y frutas"
 import random
 
 
@@ -7,7 +7,7 @@ def elegir_palabra(palabras):
     return palabra_elegida
 
 
-palabras=("auto","camioneta","moto","ford","chevrolet","camion","mustang","camaro","raptor","corvet")
+palabras=("pera", "banana", "manzana", "naranja", "mandarina", "uva", "zapallo", "papa", "apio", "pepino", "durazno")
 palabra_elegida_afuera=elegir_palabra(palabras)
 print(palabra_elegida_afuera)
 
