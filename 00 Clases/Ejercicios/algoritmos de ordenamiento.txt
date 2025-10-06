@@ -9,3 +9,24 @@ Merge sort para muchos elementos
 
 busqueda lineal, simple pero demora. Si el elemento esta al ultimo demora demasiado. es convencional.
 
+FUNCINES LAMBDA
+
+CAPTURAR EL ERROR QUE ES, ESPECIFICAR BIEN EL ERROR CON TRY EXCEPT
+
+try, except, else y finally
+
+Se puede generar una interrupcion del programa con "raise".
+
+para paises de integrador se utilizan diccionarios. pasar csv a diccionarios
+
+las claves no se peuden repetir y deben ser inmutables.
+se accede a un valor con:
+diccionario{clave}->devuelve el valor
+es importante manejar una cosa dentro de la otra, ya que pueden haber diccionario dentro de otros.
+diccionario[notas][lengua]<-nota en lengua
+se puede recorrer con iteracion con claves, valores o trayendo pares.
+
+funcion(a,b) -> en una funcion que hace operaciones=resultados.split(,)
+return(s,r,m,d)
+
+suma,resta,multi,divi=funcion[]
