@@ -1,0 +1,11 @@
+Bubble sort es el convencional para elementos moderados
+
+Selection sort divide lista en dos partes, ordenada y desordenada. Pone al mas chico en el primer lugar
+
+Insertion sort divide como en selection pero verificia
+
+Merge sort para muchos elementos
+
+
+busqueda lineal, simple pero demora. Si el elemento esta al ultimo demora demasiado. es convencional.
+
