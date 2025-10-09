@@ -6,11 +6,10 @@
 # Solicitar los números al usuario y mostrar el resultado usando esta
 # función.
 
-def calcular_promedio(a, b, c):
-    return (a+b+c)/3
+def calcular_precio_final(precio, descuento=0):
+    precio_final = precio - (precio * descuento / 100)
+    return round(precio_final, 2)
 
-num1=float(input("Ingrese el primer número: "))
-num2=float(input("Ingrese el segundo número: "))
-num3=float(input("Ingrese el tercer número: "))
-promedio=calcular_promedio(num1, num2, num3)
-print(f"El promedio de los números ingresados es: {promedio}.")
+resultado = calcular_precio_final(120, 15)
+print(resultado)
+
