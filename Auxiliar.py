@@ -1,15 +1,16 @@
 "AUXILIAR"
 #----------------------------------#
 
-# 8. Crear una función llamada calcular_imc(peso, altura) que reciba el
-# peso en kilogramos y la altura en metros, y devuelva el índice de
-# masa corporal (IMC). Solicitar al usuario los datos y llamar a la fun-
-# ción para mostrar el resultado con dos decimales.
-print("Ejercicio 8")
+# 10.Crear una función llamada calcular_promedio(a, b, c) que reciba
+# tres números como parámetros y devuelva el promedio de ellos.
+# Solicitar los números al usuario y mostrar el resultado usando esta
+# función.
 
-def calcular_imc(peso, altura):
-    print(f"Su Índice de Masa Corporal es de: {round((peso/(altura**2)), 2)}")
+def calcular_promedio(a, b, c):
+    return (a+b+c)/3
 
-peso_usuario=float(input("Ingrese su peso en kilogramos: "))
-altura_usuario=float(input("Ingrese su altura en metros: "))
-calcular_imc(peso_usuario, altura_usuario)
+num1=float(input("Ingrese el primer número: "))
+num2=float(input("Ingrese el segundo número: "))
+num3=float(input("Ingrese el tercer número: "))
+promedio=calcular_promedio(num1, num2, num3)
+print(f"El promedio de los números ingresados es: {promedio}.")

@@ -51,6 +51,9 @@ def operaciones_basicas(a, b):
 def calcular_imc(peso, altura):
     print(f"Su Índice de Masa Corporal es de: {round((peso/(altura**2)), 2)}")
 
+#9.
+def celsius_a_fahrenheit(celsius):
+    print(f"El equivalente a grados Farenheit es de: {round(((celsius*9/5)+32), 2)}")
 
 ###################### Programa Principal ######################
 
@@ -140,11 +143,14 @@ altura_usuario=float(input("Ingrese su altura en metros: "))
 calcular_imc(peso_usuario, altura_usuario)
 
 
-
 # 9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
 # una temperatura en grados Celsius y devuelva su equivalente en
 # Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
 # resultado usando la función.
+print("Ejercicio 8")
+celsius_a_fahrenheit(float(input("Ingrese grados Celcius a pasar a Farenheit: ")))
+
+
 # 10.Crear una función llamada calcular_promedio(a, b, c) que reciba
 # tres números como parámetros y devuelva el promedio de ellos.
 # Solicitar los números al usuario y mostrar el resultado usando esta
