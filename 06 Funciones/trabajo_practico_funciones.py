@@ -37,6 +37,20 @@ def tabla_multiplicar(numero):
     print(f"{numero} x 9 = {numero*9}")
     print(f"{numero} x 10 = {numero*10}")
 
+#7.
+def operaciones_basicas(a, b):
+    resultados=[]
+    resultados.append(a+b)
+    resultados.append(a-b)
+    resultados.append(a*b)
+    resultados.append(a/b)
+    resultados=tuple(resultados)
+    return resultados
+
+#8.
+def calcular_imc(peso, altura):
+    print(f"Su Índice de Masa Corporal es de: {round((peso/(altura**2)), 2)}")
+
 
 ###################### Programa Principal ######################
 
@@ -105,16 +119,28 @@ tabla_multiplicar(numero_global)
 # do de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los re-
 # sultados de forma clara.
 print("Ejercicio 7")
+numero1_global=int(input(f"Ingrese primer número: "))
+numero2_global=int(input("Ingrese segundo número: "))
 
+resultados_global=operaciones_basicas(numero1_global,numero2_global)
 
-
-
+print(f"La suma entre ambos numeros es: {resultados_global[0]}.")
+print(f"La resta entre ambos numeros es: {resultados_global[1]}.")
+print(f"La multiplicación entre ambos numeros es: {resultados_global[2]}.")
+print(f"La división entre ambos numeros es: {resultados_global[3]}.")
 
 
 # 8. Crear una función llamada calcular_imc(peso, altura) que reciba el
 # peso en kilogramos y la altura en metros, y devuelva el índice de
 # masa corporal (IMC). Solicitar al usuario los datos y llamar a la fun-
 # ción para mostrar el resultado con dos decimales.
+print("Ejercicio 8")
+peso_usuario=float(input("Ingrese su peso en kilogramos: "))
+altura_usuario=float(input("Ingrese su altura en metros: "))
+calcular_imc(peso_usuario, altura_usuario)
+
+
+
 # 9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
 # una temperatura en grados Celsius y devuelva su equivalente en
 # Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
