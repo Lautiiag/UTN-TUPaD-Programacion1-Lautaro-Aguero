@@ -55,6 +55,11 @@ def calcular_imc(peso, altura):
 def celsius_a_fahrenheit(celsius):
     print(f"El equivalente a grados Farenheit es de: {round(((celsius*9/5)+32), 2)}")
 
+#10.
+def calcular_promedio(a, b, c):
+    return (a+b+c)/3
+
+
 ###################### Programa Principal ######################
 
 # 1. Crear una función llamada imprimir_hola_mundo que imprima por
@@ -147,7 +152,7 @@ calcular_imc(peso_usuario, altura_usuario)
 # una temperatura en grados Celsius y devuelva su equivalente en
 # Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
 # resultado usando la función.
-print("Ejercicio 8")
+print("Ejercicio 9")
 celsius_a_fahrenheit(float(input("Ingrese grados Celcius a pasar a Farenheit: ")))
 
 
@@ -155,3 +160,9 @@ celsius_a_fahrenheit(float(input("Ingrese grados Celcius a pasar a Farenheit: ")
 # tres números como parámetros y devuelva el promedio de ellos.
 # Solicitar los números al usuario y mostrar el resultado usando esta
 # función.
+print("Ejercicio 10")
+num1=float(input("Ingrese el primer número: "))
+num2=float(input("Ingrese el segundo número: "))
+num3=float(input("Ingrese el tercer número: "))
+promedio=calcular_promedio(num1, num2, num3)
+print(f"El promedio de los números ingresados es: {promedio}.")
