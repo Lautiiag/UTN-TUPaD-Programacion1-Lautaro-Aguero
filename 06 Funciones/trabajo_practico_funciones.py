@@ -69,6 +69,7 @@ print("Ejercicio 1")
 impirimir_hola_mundo(None)
 print()
 
+
 # 2. Crear una función llamada saludar_usuario(nombre) que reciba
 # como parámetro un nombre y devuelva un saludo personalizado.
 # Por ejemplo, si se llama con saludar_usuario("Marcos"), deberá de-
@@ -112,6 +113,7 @@ print()
 print("Ejercicio 5")
 segundos_a_horas(float(input("Ingrese cantidad de segundos: ")))
 print()
+
 
 # 6. Crear una función llamada tabla_multiplicar(numero) que reciba un
 # número como parámetro y imprima la tabla de multiplicar de ese
