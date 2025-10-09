@@ -24,6 +24,19 @@ def calcular_perimetro_circulo(radio):
 def segundos_a_horas(segundos):
     print(round((segundos/3600), 2))
 
+#6.
+def tabla_multiplicar(numero):
+    print(f"{numero} x 1 = {numero*1}")
+    print(f"{numero} x 2 = {numero*2}")
+    print(f"{numero} x 3 = {numero*3}")
+    print(f"{numero} x 4 = {numero*4}")
+    print(f"{numero} x 5 = {numero*5}")
+    print(f"{numero} x 6 = {numero*6}")
+    print(f"{numero} x 7 = {numero*7}")
+    print(f"{numero} x 8 = {numero*8}")
+    print(f"{numero} x 9 = {numero*9}")
+    print(f"{numero} x 10 = {numero*10}")
+
 
 ###################### Programa Principal ######################
 
@@ -82,10 +95,22 @@ print()
 # número como parámetro y imprima la tabla de multiplicar de ese
 # número del 1 al 10. Pedir al usuario el número y llamar a la fun-
 # ción.
+print("Ejercicio 6")
+numero_global=int(input("Ingrese un número: "))
+tabla_multiplicar(numero_global)
+
+
 # 7. Crear una función llamada operaciones_basicas(a, b) que reciba
 # dos números como parámetros y devuelva una tupla con el resulta-
 # do de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los re-
 # sultados de forma clara.
+print("Ejercicio 7")
+
+
+
+
+
+
 # 8. Crear una función llamada calcular_imc(peso, altura) que reciba el
 # peso en kilogramos y la altura en metros, y devuelva el índice de
 # masa corporal (IMC). Solicitar al usuario los datos y llamar a la fun-

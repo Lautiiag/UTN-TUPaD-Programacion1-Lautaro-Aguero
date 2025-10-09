@@ -1,6 +1,10 @@
 "AUXILIAR"
 #----------------------------------#
-def segundos_a_horas(segundos):
-    print(round((segundos/3600), 2))
+# 7. Crear una función llamada operaciones_basicas(a, b) que reciba
+# dos números como parámetros y devuelva una tupla con el resulta-
+# do de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los re-
+# sultados de forma clara.
+print("Ejercicio 7")
 
-segundos_a_horas(float(input("Ingrese cantidad de segundos: ")))
+def operaciones_basicas(a, b):
+    
