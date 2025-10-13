@@ -6,7 +6,6 @@ while mochila_bien_armada == False:
     except:
         print("No ingresó un número válido.")
 
-espacios_mochila=()
-for elementos_agregados in range(0,espacios_para_agregar):
-    espacios_mochila()=append(0)
-print(espacios_mochila)
+
+
+espacios_mochila=armado_de_lista_con_ingreso_usuario(espacios_para_agregar)
