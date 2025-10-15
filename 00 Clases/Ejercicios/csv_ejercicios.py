@@ -3,23 +3,29 @@
 import csv
 
 def agregar_articulo(articulo, precio):
-    with open("alumnos.csv", "a", newline="") as archivo:
+    with open("articulos.csv", "a", newline="") as archivo:
         escritor = csv.DictWriter(archivo)
         escritor.writerow([articulo, precio])
 
 #CREAR ARCHIVO
-with open("alumnos.csv", "w", newline="") as archivo:
-    escritor = csv.DictWriter(archivo)
-    escritor.writerow(["Articulo", "Precio"])  # encabezado
-    escritor.writerow(["Banana", 10])
-    escritor.writerow(["Pera", 15])
-    escritor.writerow(["Manzana", 12])
+articulos=[
+    {"nombre":"manzana", "precio":"10"},
+    {"nombre":"banana", "precio":"8"},
+    {"nombre":"mandarina", "precio":"12"}]
+with open("articulos.csv", "w", newline="") as archivo:
+    campos = ["Artículo", "Precio"]
+    escritor = csv.DictWriter(archivo, fieldnames = campos)
+    escritor.writerow()
+    escritor.writerow(articulos)
+
 
 #INICIAR MENU
 salir=False
 while salir == False:
-    print("1. Agregar arículo")
+    print("1. Agregar artículo")
     print("2. Printear")
+    print("3. Quitar artículo")
+
     print("9. Salir")
 
     opcion=input("Ingrese una opción: ")
@@ -30,11 +36,16 @@ while salir == False:
             precio_artículo=int(input("Ingrese valor: "))
             agregar_articulo(articulo_global, precio_artículo)
         case "2":
-            with open("alumnos.csv", "r") as archivo:
+            with open("articulos.csv", "r") as archivo:
                 lector = csv.DictReader(archivo)
                 for fila in lector:
                     print(fila)
         case "3":
-            agregar_articulo(0,0)
+            articulo_a_eliminar=input("Ingrese el artículo: ")
+            with open("articulos.csv", "r") as archivo:
+                lector = csv.DictReader(archivo)
+                for fila in lector:
+                    if fila[1] != articulo_a_eliminar:
+                        escritor = csv.writerow(fila)
         case "9":
             break
