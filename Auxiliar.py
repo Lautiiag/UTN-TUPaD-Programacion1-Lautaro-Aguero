@@ -13,3 +13,5 @@ def calcular_precio_final(precio, descuento=0):
 resultado = calcular_precio_final(120, 15)
 print(resultado)
 
+num={1,2,3}
+print(num)
