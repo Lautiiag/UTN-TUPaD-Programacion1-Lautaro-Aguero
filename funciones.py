@@ -19,5 +19,3 @@ def ingreso_int(int_ingresado):
         except:
             print("No ingresó un número válido.")
     return int_ingresado
-
-cantidad_espacios_mochila=ingreso_int(int_ingresado)
