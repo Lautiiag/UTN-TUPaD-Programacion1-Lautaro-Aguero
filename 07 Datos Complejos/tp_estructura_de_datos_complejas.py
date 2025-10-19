@@ -55,5 +55,13 @@ else:
 # • Las palabras únicas (usando un set).
 # • Un diccionario con la cantidad de veces que aparece cada palabra.
 print("Ejercicio 5")
+frase=input("Ingrese frase para mostrar palabras únicas de la misma: ")
+frase_lista=frase.split()
+frase_set=set(frase_lista)
+print(frase_set)
 
-#############FALTA TERMINARRRRRRRRRRRRR##############
+
+
+
+# 6) Permití ingresar los nombres de 3 alumnos, y para cada uno una tupla de 3 notas.
+# Luego, mostrá el promedio de cada alumno.
